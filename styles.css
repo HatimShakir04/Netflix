@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif; /* Luxurious serif font */
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    background-color: #f9f9f9; /* Soft off-white background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0d0d0d; /* Deep black for a premium feel */
+    color: #d4af37; /* Gold for elegance */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f; /* Brighter gold on hover */
+}
+
+.hero {
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* Luxurious gradient */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Featured Watches Section */
+.featured-watches {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Subtle gradient */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.featured-watches h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #2c2c2c;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.watch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.watch-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watch-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.watch-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.watch-card h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+}
+
+.watch-card p {
+    font-size: 16px;
+    color: #666666;
+    margin: 0 15px 20px;
+    line-height: 1.6;
+}
+
+.watch-card .price {
+    font-size: 20px;
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.watch-card .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.watch-card .btn:hover {
+    background: #d4af37;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d0d0d;
+    color: #d4af37;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 16px;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .watch-grid {
+        grid-template-columns: 1fr;
+    }
+}
